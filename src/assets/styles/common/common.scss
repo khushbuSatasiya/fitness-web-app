@@ -17,7 +17,7 @@
 }
 
 .width--5 {
-	width: 5%;
+	width: 5% !important;
 }
 
 .width--6 {
@@ -206,7 +206,7 @@
 --------------------------------------------------------------------------------------*/
 
 .hide {
-	display: none;
+	display: none !important;
 }
 
 .show {
@@ -348,6 +348,9 @@
 	@include marginTop(65px);
 }
 
+.mt--80 {
+	@include marginTop(80px);
+}
 .mt--auto {
 	@include marginTop(auto);
 }
@@ -952,6 +955,10 @@
 	top: 25px;
 }
 
+.left--10 {
+	left: 10%;
+}
+
 .right--25 {
 	right: 25px;
 }
@@ -1206,6 +1213,14 @@
 	color: $black;
 }
 
+.text--light-blue {
+	color: $light-blue;
+}
+
+.text--yellow {
+	color: $yellow;
+}
+
 /* Background
 ------------------------------------------------------------------------------*/
 
@@ -1218,6 +1233,14 @@
 
 .bg--primary {
 	background-color: $primary;
+}
+
+.bg--secondary {
+	background-color: $secondary;
+}
+
+.bg--comet {
+	background-color: $comet;
 }
 
 .bg--white {
@@ -1338,4 +1361,10 @@
 .error {
 	color: getColor($red, 200);
 	@include marginTop(10px);
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }

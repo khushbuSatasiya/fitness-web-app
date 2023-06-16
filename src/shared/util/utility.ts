@@ -56,3 +56,13 @@ export const generateColor = () => {
 	const RGBColor = `${x} ,${y}, ${z}`;
 	return RGBColor;
 };
+
+export const getHeartRateCondition = (avg: number) => {
+	if (avg > 162) {
+		return 'Your heart rate is up from normal range.';
+	} else if (avg < 95) {
+		return 'Your heart rate is slowing down from normal range. Do exercise.';
+	} else {
+		return 'Normal heart rate.';
+	}
+};

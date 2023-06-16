@@ -1,0 +1,82 @@
+@import '../../../assets/styles/app.scss';
+
+.dashboard {
+	.side-nave {
+		border-right: 1px solid $secondary;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		.link {
+			@include padding(16px);
+			background-color: $secondary;
+			.side-menu-link {
+				.nav-label {
+					color: $white;
+				}
+			}
+		}
+	}
+	.profile {
+		border-radius: 24px 0px 0px 24px;
+		right: 0;
+		top: 0;
+		height: 100vh;
+	}
+	.activity-box {
+		width: 278px;
+		height: 278px;
+		background-color: $secondary;
+		@include margin(12px);
+
+		.calories {
+			top: 65px;
+			left: 75px;
+		}
+	}
+
+	.doughnut-chart {
+		canvas {
+			width: 200px !important;
+			height: 155px !important;
+			z-index: 999;
+		}
+	}
+
+	.profile-container {
+		width: 100%;
+		max-width: 4000px;
+		@include margin(0 auto);
+		@include padding(0 10px);
+		box-sizing: border-box;
+		.profile-wrapper {
+			.profile-img {
+				@include padding(6px);
+				width: 125px;
+				height: 125px;
+				border: 2px solid $primary;
+			}
+			.detail {
+				border-right: 1px solid $primary;
+				@include padding(16px 30px);
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+		.bar-chart {
+			@include marginTop(80px);
+			canvas {
+				width: 340px;
+				height: 400px;
+			}
+		}
+	}
+}
+
+.profile-icon {
+	svg {
+		width: 72px;
+		height: 55px;
+	}
+}

@@ -31,7 +31,8 @@ $full-viewport-width: 100vw;
 $full-viewport-height: 100vh;
 
 //Color Palette variables
-$primary: #ed6a29;
+$primary: #000025;
+$secondary: #40404f;
 $white: #ffffff;
 $black: #18191a;
 $green: #1ca051;
@@ -39,6 +40,9 @@ $comet: #676768;
 $violet: #4c9b92;
 $light-pink: #bf6196;
 $yellow: #f0a63d;
+$light-blue: #40eac2fc;
+$blue: #4bc6ff;
+$red: red;
 
 $grey: (
 	50: #bdbdbd,
@@ -82,7 +86,8 @@ $purple: (
 $blue: (
 	100: #29a3ef,
 	200: #3478fb,
-	300: #3076b1
+	300: #3076b1,
+	400: #4bc6ff
 );
 
 $orange--gradient: linear-gradient(270deg, #ed6a29 0%, rgba(41, 41, 41, 0) 100%);

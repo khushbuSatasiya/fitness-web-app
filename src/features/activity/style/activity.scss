@@ -1,0 +1,40 @@
+@import '../../../assets/styles/app.scss';
+
+.activity {
+	width: 100%;
+	max-width: 850px;
+	@include margin(0 auto);
+	@include padding(40px 10px);
+	.activity-detail__box {
+		width: 400px;
+		height: 120px;
+		background-color: $secondary;
+		@include padding(25px 0);
+		@include margin(15px 0);
+		.steps-image {
+			width: 90px;
+			height: 90px;
+			background-color: $secondary;
+		}
+	}
+	.heart-rate {
+		height: 165px;
+		.heart-rate__img {
+			height: 170px;
+			width: 315px;
+		}
+		.heart-rate__content {
+			width: 430px;
+		}
+		.heart-rate__lottie {
+			div {
+				height: 170px;
+				width: 295px;
+			}
+		}
+
+		.rate-text {
+			max-width: 455px;
+		}
+	}
+}
